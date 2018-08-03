@@ -1,13 +1,14 @@
 # Modules
 import os
 import csv
+import sys
 
 def printConsoleResult(totalMonth,totalNetAmount, averageChange, greatestProfit,greatestDecrease ):
     print('Financial Analysis ')
     print("-------------------------------")
     print('Total Months: ', totalMonth)
-    print('Total: $', totalNetAmount)
-    print('Average  Change: $', averageChange)
+    print('Total: $',totalNetAmount)
+    print('Average  Change: $',averageChange)
     print('Greatest Increase in Profits: ', greatestProfit)
     print('Greatest Decrease in Profits: ', greatestDecrease)
 
@@ -26,6 +27,7 @@ def getAverageChange(diffList):
     average= sum/len(diffList)
     return round(average,2)
 
+#variables
 totalMonth=0
 totalNetAmount=0
 listPL=[]
@@ -44,7 +46,13 @@ with open('budget_data.csv', newline="") as csvfile:
     greatestLoss=min(diffList)
     greatestProfitMonthIndex= diffList.index(greatestProfit)+1
     greatestLossMonthIndex= diffList.index(greatestLoss)+1
-    var1= (allRows[greatestProfitMonthIndex][0])+'($ '+str(greatestProfit)+')'
-    var2= (allRows[greatestLossMonthIndex][0])+'($ '+str(greatestLoss)+')'
+    averageChange=getAverageChange(diffList)
+    var1= (allRows[greatestProfitMonthIndex][0])+' ($'+str(greatestProfit)+')'
+    var2= (allRows[greatestLossMonthIndex][0])+' ($'+str(greatestLoss)+')'
 
-printConsoleResult(totalMonth,totalNetAmount,getAverageChange(diffList),var1,var2)
+    #Print the output to Console.
+    printConsoleResult(totalMonth,totalNetAmount,averageChange,var1,var2)
+
+    #Redirect the output to text file.
+    sys.stdout=open('PyBankOutput.txt','w')
+    printConsoleResult(totalMonth,totalNetAmount,averageChange,var1,var2)
