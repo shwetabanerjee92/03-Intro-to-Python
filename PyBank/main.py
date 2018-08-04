@@ -7,10 +7,10 @@ def printConsoleResult(totalMonth,totalNetAmount, averageChange, greatestProfit,
     print('Financial Analysis ')
     print("-------------------------------")
     print('Total Months: ', totalMonth)
-    print('Total: $',totalNetAmount)
-    print('Average  Change: $',averageChange)
-    print('Greatest Increase in Profits: ', greatestProfit)
-    print('Greatest Decrease in Profits: ', greatestDecrease)
+    print(f'Total: ${totalNetAmount}')
+    print(f'Average  Change: ${averageChange}')
+    print(f'Greatest Increase in Profits: {greatestProfit}')
+    print(f'Greatest Decrease in Profits: {greatestDecrease}')
 
 def getDifferntialList(listPL):
     differntialList=[]
