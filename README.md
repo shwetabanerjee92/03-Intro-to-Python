@@ -6,7 +6,7 @@ This project consists of two main programs: **PyBank** and **PyPoll**
 
 ![Revenue](Images/revenue-per-lead.jpg)
 
-* In this challenge, we are tasked with creating a Python script for analyzing the financial records of your company. Using a set of financial data called [budget_data.csv](Resources/budget_data.csv). The dataset is composed of two columns: `Date` and `Profit/Losses`.
+* In this challenge, we are tasked with creating a Python script for analyzing the financial records of a company. Using a set of financial data called [budget_data.csv](Resources/budget_data.csv). The dataset is composed of two columns: `Date` and `Profit/Losses`.
 
 * Our task is to create a Python script that analyzes the records to calculate each of the following:
 
