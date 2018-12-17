@@ -12,7 +12,7 @@ This is a Python 3.x project.
 
 ![Revenue](Images/revenue-per-lead.jpg)
 
-* In this challenge, we are tasked with creating a Python script for analyzing the financial records of your company. You will give a set of financial data called [budget_data.csv](PyBank/Resources/budget_data.csv). The dataset is composed of two columns: `Date` and `Profit/Losses`.
+* In this challenge, we are tasked with creating a Python script for analyzing the financial records of your company. You will give a set of financial data called [budget_data.csv](Resources/budget_data.csv). The dataset is composed of two columns: `Date` and `Profit/Losses`.
 
 * Our task is to create a Python script that analyzes the records to calculate each of the following:
 
@@ -32,7 +32,7 @@ This is a Python 3.x project.
 
 * In this challenge, we are tasked with helping a small, rural town modernize its vote-counting process.
 
-* You will be give a set of poll data called [election_data.csv](PyPoll/Resources/election_data.csv). The dataset is composed of three columns: `Voter ID`, `County`, and `Candidate`. Your task is to create a Python script that analyzes the votes and calculates each of the following:
+* You will be give a set of poll data called [election_data.csv](Resources/election_data.csv). The dataset is composed of three columns: `Voter ID`, `County`, and `Candidate`. Your task is to create a Python script that analyzes the votes and calculates each of the following:
 
   * The total number of votes cast
 
